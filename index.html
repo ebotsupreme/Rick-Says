@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Never Gonna!</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div id="container">
+     <h1>Rick Says</h1>
+     <div class="countDown">
+     </div>
+       <div class = "boxesContainer">
+        <div id='row1'>
+         <div class="box yellow" id='boxYellow' data-num="0">
+           <audio class ="sound" id="sound-1">
+            <source src = "sounds/1.mp3" type = "audio/mpeg"/>
+            <source src = "sounds/1.ogg" type = "audio/ogg"/>
+           </audio>
+         </div>
+         <div class="box blue" id='boxBlue' data-num="1">
+           <audio class ="sound" id="sound-2">
+             <source src = "sounds/2.mp3" type = "audio/mpeg"/>
+             <source src = "sounds/2.ogg" type = "audio/ogg"/>
+           </audio>
+         </div>
+       </div>
+       <div id='row2'>
+          <div class="box red" id='boxRed' data-num="2">
+            <audio class ="sound" id="sound-3">
+              <source src = "sounds/3.mp3" type = "audio/mpeg"/>
+              <source src = "sounds/3.ogg" type = "audio/ogg"/>
+            </audio>
+          </div>
+          <div class="box green" id='boxGreen' data-num="3">
+            <audio class ="sound" id="sound-4">
+              <source src = "sounds/4.mp3" type = "audio/mpeg"/>
+              <source src = "sounds/4.ogg" type = "audio/ogg"/>
+            </audio>
+          </div>
+       </div>
+       <div class="circle">
+       </div>
+     </div>
+     <div class ="display" id="player1Score">Player 1 Score:</div>
+     <div class ="display" id="player2Score">Player 2 Score:</div>
+     <button type="button" class="goButton">GO!</button>
+     <button type="button" class="restartButton">Restart Game!</button>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src ="main.js"></script>
+  </body>
+</html>
